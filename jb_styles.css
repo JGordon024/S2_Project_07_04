@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Jacob Gordon
+   Date:       11/30
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+/* Structural Styles */
+body {
+    background: rgb(112, 111, 111);
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+/* Header Styles */
+body>header img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Navigation Styles */
+nav.horizontal {
+    width: 100%;
+    display: inline;
+
+}
+
+nav.horizontal ul {
+    text-align: center;
+}
+
+nav.horizontal ul li {
+    background: rgb(91, 91, 91);
+    display: block;
+    width: 16.66%;
+    float: left;
+
+}
+
+nav.horizontal a {
+    color: black;
+}
+
+nav.horizontal ul li a:link,
+nav.horiontal ul li a:visited {
+    text-decoration: none;
+}
+
+ul.submenu {
+    display: none;
+}
+
+ul.submenu+ul:hover {
+    display: block;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 480px) {}
