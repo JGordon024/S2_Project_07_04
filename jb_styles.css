@@ -15,39 +15,100 @@
 
 */
 /* Structural Styles */
-html{
-    background: rgb(0,255,255);  
+html {
+    background: url(jb_back3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
 body {
-background: white;
-width: 80%;
-margin: auto;
+    background: white;
+    width: 80%;
+    margin: auto;
     height: 100%;
     display: flex;
     display: -webkit-flex;
     flex-flow: row wrap;
     -webkit-flex-flow: row wrap;
 }
+
+section {
+    font-family: 'Shrikhand', cursive;
+}
+
 /* Header Styles */
+header {
+    width: 100%;
+}
+
 body header img#logo {
     width: 20%;
+
 }
+
+body header {
+    background: url(jb_image01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header nav.horizontal {
+    height: 20px;
+}
+
 /* Section Slang Structure */
-section.slang{
-    width:80%;
+section.slang {
+    width: 80%;
     margin-right: 10%;
     margin-left: 10%;
     text-align: center;
+    background: rgb(18, 53, 255);
+    border: outset rgb(115, 183, 223)10px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.3em;
+}
+
+p:first-letter {
+    font-size: 1.5em;
+}
+
+/* Section Center */
+section.about {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 /* Navigation Styles */
-ul.submenu>li{
-display: block;
-margin: 0 auto;
+
+ul.submenu>li {
+    display: block;
+    margin: 0 auto;
 }
 
+ul.mainmenu>li {
+    position: relative;
+}
 
-ul.submenu li{
-clear: both;
+ul.submenu li {
+    clear: both;
     width: 100%;
 }
 
@@ -58,7 +119,6 @@ nav.horizontal {
 
 nav.horizontal ul {
     text-align: center;
-    background:blue;
 }
 
 nav.horizontal ul li {
@@ -80,33 +140,43 @@ ul.submenu {
     display: none;
     width: 100%;
     position: absolute;
-    
-}
-.submenu{
     background: rgb(0, 255, 255);
 }
+
 a:hover+ul,
 ul.submenu:active {
     display: block;
 }
 
 /* Footer Styles */
-footer{
-    width:100%;
+footer {
+    width: 100%;
     text-align: center;
-    background:rgb(0, 0, 255);
+    background: rgb(0, 0, 255);
     color: white;
 }
-footer a{
+
+footer a {
     display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 footer a:hover,
-footer a:active{
-text-decoration: underline;
+footer a:active {
+    text-decoration: underline;
 }
+
 /* Mobile Styles */
 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    body header {
+        background: url(jb_logo.png);
+        repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    body header img#logo {
+        display: none;
+    }
+}
